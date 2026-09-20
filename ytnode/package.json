@@ -1,0 +1,14 @@
+{
+  "name": "ytnode",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local YouTube-download HTTP microservice for fbot's ytnode_client.py — a ytdl-core-based fallback for when yt-dlp's own quality ladder gets degraded (see ytdlp_downloader.py's get_available_qualities).",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@distube/ytdl-core": "^4.16.4",
+    "express": "^4.19.2"
+  }
+}
