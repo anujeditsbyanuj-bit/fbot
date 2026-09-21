@@ -197,8 +197,8 @@ except Exception as e:
     logger.warning(f"[terabox-token-api] diskwala.py's Telethon session not importable ({e}) — token-API tier disabled, using web+cf_bypass only.")
     _TOKEN_API_AVAILABLE = False
 
-TOKEN_API_DOWNLOAD = "https://api2.diskwala.net/api/terabox/download"
-TOKEN_API_STATUS = "https://api2.diskwala.net/api/terabox/status"
+TOKEN_API_DOWNLOAD = "https://diskwala.net/web/api/terabox/download"
+TOKEN_API_STATUS = "https://diskwala.net/web/api/terabox/status"
 
 
 def _fetch_terabox_via_token_api(link: str, auth: str) -> dict:
