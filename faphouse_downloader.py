@@ -71,7 +71,7 @@ BASE_URLS = {
 DEFAULT_BASE_URL = os.environ.get("BASE_URL", "https://faphouse2.com")
 
 EMAIL = os.environ.get('EMAIL', 'rockstarga69@gmail.com')
-PASSWORD = os.environ.get('PASSWORD', 'Jaiisbeast@1')
+PASSWORD = os.environ.get('PASSWORD', 'SajagOG@1234')
 # Force a fresh login after this long, even if the client still thinks it's
 # logged in — the site can silently expire the session server-side with no
 # client-visible signal, so time-based re-login is the only reliable guard.
