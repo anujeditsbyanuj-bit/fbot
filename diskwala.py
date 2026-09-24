@@ -200,7 +200,7 @@ class DiskwalaAuthError(Exception):
     so callers know a fresh token (not a retry) is what's needed."""
     pass
 
-API_DOWNLOAD = "https://api2.diskwala.net/api/diskwala/download"
+API_DOWNLOAD = "https://api2.diskwala.net/api/diskwala/download/d"
 API_STATUS = "https://api2.diskwala.net/api/diskwala/status"
 # BUG FIX: get_all_playlist_files() (below) was POSTing playlist URLs to
 # API_DOWNLOAD and getting back {"ok": false, "error": "invalid diskwala
