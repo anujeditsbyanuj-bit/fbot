@@ -316,7 +316,7 @@ class DiskwalaAuthError(Exception):
     pass
 
 API_DOWNLOAD = "https://api2.diskwala.net/api/diskwala/downloadw"
-API_STATUS = "https://api2.diskwala.net/api/diskwala/status"
+API_STATUS = "https://api2.diskwala.net/api/diskwala/statusw"
 # BUG FIX: get_all_playlist_files() (below) was POSTing playlist URLs to
 # API_DOWNLOAD and getting back {"ok": false, "error": "invalid diskwala
 # link"} for every playlist — confirmed against a real working reference
@@ -356,8 +356,8 @@ def _get_endpoints(link: str) -> tuple[str, str]:
     """Return (download_api, status_api) based on which service the link belongs to."""
     if "flezen.com" in link.lower():
         return (
-            "https://api2.diskwala.net/api/flezen/download",
-            "https://api2.diskwala.net/api/flezen/status?link=",
+            "https://api2.diskwala.net/api/flezen/downloadw",
+            "https://api2.diskwala.net/api/diskwala/statusw",
         )
     if "vidbunker.in" in link.lower():
         return (
