@@ -367,7 +367,7 @@ def _strip_ansi(text: str) -> str:
     return _ANSI_RE.sub("", text)
 
 POWERED_BY = "Anuj Kumar"  # change this to whatever name/credit you want shown
-POWERED_BY_URL = "https://t.me/anujedits97"  # change this to the profile/channel to link to
+POWERED_BY_URL = "https://t.me/anujbyedit"  # change this to the profile/channel to link to
 
 
 def _guess_site_name_from_link(link: str) -> str:
