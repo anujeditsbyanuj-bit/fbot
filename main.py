@@ -806,7 +806,7 @@ def referral_keyboard(bot_username: str, user_id: int, referral_count: int) -> I
         [make_button(SC("📤 Share Referral Link"), url=share_url, style=BTN_PRIMARY)],
         [make_button(SC(f"👥 Referrals: {referral_count}"), callback_data="ref_count", style=BTN_PRIMARY)],
         [make_button(SC("💎 Premium Rewards"), callback_data="ref_rewards", style=BTN_PRIMARY)],
-        [make_button(SC("📞 Contact Admin"), url="https://t.me/anujedits97", style=BTN_PRIMARY)],
+        [make_button(SC("📞 Contact Admin"), url="https://t.me/anujbyedit", style=BTN_PRIMARY)],
     ])
 
 
