@@ -6,8 +6,8 @@ load_dotenv()
 # Hardcoded as defaults per your request — still overridable via a real
 # env var (e.g. on Render) if one is set, since os.getenv's second
 # argument is only used when the env var is missing.
-API_ID = int(os.getenv("API_ID", "33029767"))
-API_HASH = os.getenv("API_HASH", "5d897bed11bc8b062a12f6c1c3c5360a")
+API_ID = int(os.getenv("API_ID", "20432885"))
+API_HASH = os.getenv("API_HASH", "4fdcfab1c7f5e24ae69f3ce6bb234dec")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "8930334421:AAHE2D6OpyG73Vuw6IVQhaph4bVgClvw3rY")
 # Optional: a Telethon user-session string (phone-number login, separate
 # from BOT_TOKEN above). Only needed for diskwala.py's token-API tier —
