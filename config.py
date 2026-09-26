@@ -9,6 +9,7 @@ load_dotenv()
 API_ID = int(os.getenv("API_ID", "20432885"))
 API_HASH = os.getenv("API_HASH", "4fdcfab1c7f5e24ae69f3ce6bb234dec")
 BOT_TOKEN = os.getenv("BOT_TOKEN", "8930334421:AAHE2D6OpyG73Vuw6IVQhaph4bVgClvw3rY")
+SESSION = os.getenv("SESSION", "")
 # Optional: a Telethon user-session string (phone-number login, separate
 # from BOT_TOKEN above). Only needed for diskwala.py's token-API tier —
 # logs into Telegram's "sky577bot" Mini App as a real user account to pull
