@@ -33,7 +33,7 @@ BOT_TOKEN = os.getenv("BOT_TOKEN", "8930334421:AAHE2D6OpyG73Vuw6IVQhaph4bVgClvw3
 # invisibly fighting every other unconfigured deployment for the same
 # session. Set a real, unique SESSION env var on whichever ONE
 # deployment should use this tier.
-OWNER_ID = int(os.getenv("OWNER_ID", "8931907813"))
+OWNER_ID = int(os.getenv("OWNER_ID", "8729304171"))
 
 TG_BOT_WORKERS = int(os.getenv("TG_BOT_WORKERS", "8"))   # 4→8: zyada parallel Telegram connections
 DOWNLOAD_DIR = "downloads"
@@ -49,7 +49,7 @@ MONGO_DB_NAME = os.getenv("MONGO_DB_NAME", "faphouse_bot")
 # ADMINS: comma-separated user ids in the ADMINS env var. OWNER_ID is
 # always treated as an admin even if not listed.
 # ---------------------------------------------------------------------
-ADMINS = list({OWNER_ID, *[int(x) for x in os.getenv("ADMINS", "8931907813").split(",") if x.strip()]})
+ADMINS = list({OWNER_ID, *[int(x) for x in os.getenv("ADMINS", "8729304171").split(",") if x.strip()]})
 
 # Photo shown on /start. Can be a URL or a local file path.
 START_PHOTO_URL = os.getenv("START_PHOTO_URL", "https://iili.io/n2jHVj9.jpg")
@@ -69,11 +69,11 @@ AUTO_DELETE_SECONDS = int(os.getenv("AUTO_DELETE_SECONDS", "3600"))
 
 # Optional: channel id (e.g. -100xxxxxxxxxx) where new-user/download logs
 # are posted. Leave unset/empty to disable logging.
-LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "-1003925649805")) or None
+LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID", "-1004401290975")) or None
 
 # Optional: comma-separated channel ids to also receive a copy of every
 # delivered video (a simple off-site backup). Leave empty to disable.
-BACKUP_CHANNEL_IDS = [int(x) for x in os.getenv("BACKUP_CHANNEL_IDS", "-1003925649805").split(",") if x.strip()]
+BACKUP_CHANNEL_IDS = [int(x) for x in os.getenv("BACKUP_CHANNEL_IDS", "-1004401290975").split(",") if x.strip()]
 
 # Optional: a private channel (bot must be admin there) where one copy of
 # every freshly-uploaded video is stored. Cache hits are then served with
@@ -83,7 +83,7 @@ BACKUP_CHANNEL_IDS = [int(x) for x in os.getenv("BACKUP_CHANNEL_IDS", "-10039256
 # someone else already downloaded (the old file_id is only guaranteed
 # valid for the chat it was originally sent to). Leave unset to fall back
 # to the old file_id-only behaviour.
-CACHE_CHANNEL_ID = int(os.getenv("CACHE_CHANNEL_ID", "-1003925649805")) or None
+CACHE_CHANNEL_ID = int(os.getenv("CACHE_CHANNEL_ID", "-1004401290975")) or None
 
 # ---------------------------------------------------------------------
 # Auto-scraper / auto-uploader (/autoupload) — scrapes faphouse.com's
@@ -107,7 +107,7 @@ MAX_FILE_SIZE = int(os.getenv("MAX_FILE_SIZE", str(2000 * 1024 * 1024)))
 SPLIT_PART_TARGET_BYTES = int(os.getenv("SPLIT_PART_TARGET_BYTES", str(int(MAX_FILE_SIZE * 0.93))))
 # Optional: a channel id for the 24/7 live monitor (watches for brand-new
 # releases and posts them here automatically). Leave unset to disable it.
-DEFAULT_CHANNEL = int(os.getenv("DEFAULT_CHANNEL", "-1003925649805")) or None
+DEFAULT_CHANNEL = int(os.getenv("DEFAULT_CHANNEL", "-1004401290975")) or None
 MONITOR_INTERVAL = int(os.getenv("MONITOR_INTERVAL", "180"))
 
 # eporner.com is a massive general tube site (non-stop firehose uploads),
