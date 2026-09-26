@@ -1,0 +1,11 @@
+{
+  "name": "diskwala-engine",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Real-headless-Chrome (CDP) resolver for diskwala.net links, used by diskwala.py's _resolve_diskwala_browser_engine() as a spawned subprocess. Drives the actual diskwala.net web player (types the link into its own input, clicks its own 'Get' button, sniffs the /web/api/status network response) instead of replicating its API calls directly — sidesteps Cloudflare entirely since it IS a real browser, no TLS/cookie impersonation needed.",
+  "main": "diskwala_engine.js",
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
